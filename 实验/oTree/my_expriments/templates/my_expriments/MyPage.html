@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    Show your information
+{% endblock %}
+
+{% block content %}
+
+   <p>
+       Your role is {{ Player.role }}.
+   </p>
+    {% formfields %}
+    {% next_button %}
+
+{% endblock %}
